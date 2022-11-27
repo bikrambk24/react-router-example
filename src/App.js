@@ -7,16 +7,15 @@ import Contacts from './components/Contacts';
 
 function App() {
   return (
-    <div>
+  <div>
       <h1>Homepage</h1>
       <BrowserRouter>
       <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
+        
+          <Route path = "/" element={<Home />} />
           <Route path="todos" element={<Todos />} />
           <Route path="contacts" element={<Contacts />} />
-          
-        </Route>
+
       </Routes>
     </BrowserRouter>
     </div>
